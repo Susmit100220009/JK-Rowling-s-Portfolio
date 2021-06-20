@@ -76,22 +76,24 @@ p {
 }
 
 .links {
-    float: left;
-    color: crimson;
-    padding-top: 5px;
-    padding-bottom: :5px;
-    padding-left: 9px;
-    padding-right: 9px;
+    
+   
+    transition: transform .2s;
+    padding-left: 33px;
+    padding-right: 25px;
     font-family: inherit;
     font-size: 20px;
+    display: inline;
 }
 
 .menu {
-    list-style: none;
+    background: white;
+    width:100%;
+    margin-top: 0px;
     font-family: fantasy;
-    position: absolute;
-    top: 10px;
-    right: 30px;
+    position: fixed;
+    top: 0px;
+    
     z-index: 10;
     cursor: pointer;
 
@@ -99,4 +101,33 @@ p {
 
 .links:hover {
     background-color: powderblue;
+    text-decoration: underline;
+    transform: scale(0.9);
+    
+}
+a{
+    text-decoration: none;
+    color: crimson;
+    text-shadow: 2px 2px gainsboro;
+}
+.mail a{
+    color: ghostwhite;
+    text-shadow: none;
+}
+.mail h3{
+    display: inline;
+}
+#contact{
+    background-color: firebrick;
+}
+.mail{
+    padding: 50px;
+}
+.news{
+    color:chocolate;
+    text-decoration: none;
+    text-shadow: none;
+}
+html{
+    scroll-behavior: smooth;
 }
